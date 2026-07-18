@@ -6,7 +6,7 @@
 
 // 1. String
 
-let name = "Satish";
+let name = "Blade";
 console.log(name);
 console.log(typeof name);
 
@@ -72,7 +72,7 @@ console.log(typeof id);
 // 8. Object
 
 let student = {
-    name: "Satish",
+    name: "Crystal",
     age: 24,
     city: "Noida"
 };
