@@ -72,8 +72,8 @@ console.log(!hasLicense);
 // STRING CONCATENATION
 // ==========================================
 
-let firstName = "Satish";
-let lastName = "Minj";
+let firstName = "Crystal";
+let lastName = "Blade";
 
 console.log(firstName + " " + lastName);
 
@@ -111,7 +111,7 @@ console.log(username ?? "Guest");
 // ==========================================
 
 let student = {
-    name: "Satish"
+    name: "Blade"
 };
 
 console.log(student.address?.city);
