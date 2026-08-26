@@ -1,11 +1,21 @@
 
-let mnixedArray = [2, "Banana", null, undefined, true, 'Z']; 
-
-for(let mixed of mnixedArray)
+let sum = 0
+function Vow(val)
 {
-    console.log(mixed);
+    for(const chr of val)
+    {
+        let ch = chr.toLowerCase();
+
+        if(ch == 'a' || ch == 'e' || ch=='i' || ch == 'o' || ch == 'u')
+        {
+            sum++;
+        }
+    }
+
+    return sum;
 }
 
-let number = new Array(10, 20, 30, 40);
+let val = Vow("OrystalxIlade");
+console.log("This string has : ", val, "vowels");
 
-console.log(number);
+
