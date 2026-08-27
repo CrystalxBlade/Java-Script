@@ -1,8 +1,14 @@
 
 
-var a = prompt("Enter the first number ")
-var b = prompt("Enter the second number ")
+sum(Display, 4, 8);
 
-var sum = a + b;
+function sum(callback, x , y)
+{
+    let result = x + y;
+    callback(result);
+}
 
-document.write(`${a} + ${b} = ${sum}`);
+function Display(result)
+{
+    console.log(result);
+}
