@@ -1,14 +1,6 @@
 
 
-sum(Display, 4, 8);
+let num = 12345;
+num[0] = 6;
 
-function sum(callback, x , y)
-{
-    let result = x + y;
-    callback(result);
-}
-
-function Display(result)
-{
-    console.log(result);
-}
+console.log(num);
