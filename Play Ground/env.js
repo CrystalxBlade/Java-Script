@@ -1,12 +1,10 @@
 
 
-let fruit = ["Apple", "Mango", "Banana", "Kiwi"];
+let fruit = ["Apple", "Mango", "Banana", "Kiwi", "Grapes", "Litchi"];
 
 let vegies = ["Potato", "Tomato", "Cucumber", "Carrot"];
 
 
+fruit.splice(2, 2, "Orange", "Melons");
 
-for(let fruits of fruit)
-{
-    console.log(fruits);
-}
+console.log(fruit);
