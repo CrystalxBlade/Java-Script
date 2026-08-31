@@ -2,9 +2,12 @@
 
 let fruit = ["Apple", "Mango", "Banana", "Kiwi", "Grapes", "Litchi"];
 
-let vegies = ["Potato", "Tomato", "Cucumber", "Carrot"];
+let comp = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
 
+// comp.shift();
 
-fruit.splice(2, 2, "Orange", "Melons");
+// comp.splice(2,1, "Ola");
 
-console.log(fruit);
+comp.push("Amazon");
+
+console.log(comp);
