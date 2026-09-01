@@ -2,12 +2,10 @@
 
 let fruit = ["Apple", "Mango", "Banana", "Kiwi", "Grapes", "Litchi"];
 
-let comp = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
 
-// comp.shift();
+fruit.forEach(function printVal(val)
+{
+    console.log(val);
+});
 
-// comp.splice(2,1, "Ola");
-
-comp.push("Amazon");
-
-console.log(comp);
+console.log(fruit);
