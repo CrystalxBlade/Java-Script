@@ -1,11 +1,8 @@
 
 
-let fruit = ["Apple", "Mango", "Banana", "Kiwi", "Grapes", "Litchi"];
+let num = [5, 2, 7, 9];
 
-
-fruit.forEach(function printVal(val)
-{
-    console.log(val);
-});
-
-console.log(fruit);
+num.forEach((val) => 
+    {
+        console.log(val * val);
+    })
