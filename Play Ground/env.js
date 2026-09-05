@@ -1,10 +1,16 @@
 
 
-let num = [1, 2, 3, 4, 5];
+const player = 
+{
+    name : "Blade",
+    attack : 60,
+    mana : 40,
+    damage : 20,
 
-const arr = num.reduce((prev, curr) => 
+    info: function()
     {
-        return `${prev * curr}`;
-    })
+        console.log("Name = ", this.name);
+    },
+};
 
-console.log(arr);
+console.log(player.info())
