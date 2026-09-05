@@ -1,16 +1,22 @@
 
 
-const player = 
+class spaceShip
 {
-    name : "Blade",
-    attack : 60,
-    mana : 40,
-    damage : 20,
-
-    info: function()
+    // spaceShip()
+    // {
+    //     console.log("Main engine started");
+    // }
+    start()
     {
-        console.log("Name = ", this.name);
-    },
-};
+        console.log("Engine is on");
+    }
 
-console.log(player.info())
+    stop()
+    {
+        console.log("Engine is off");
+    }
+}
+
+let rocket =  new spaceShip();
+rocket.start();
+rocket.stop();
