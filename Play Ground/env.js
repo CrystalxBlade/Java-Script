@@ -2,10 +2,11 @@
 
 class spaceShip
 {
-    // spaceShip()
-    // {
-    //     console.log("Main engine started");
-    // }
+    constructor()
+    {
+        console.log("spaceShip constructor");
+    }
+
     start()
     {
         console.log("Engine is on");
@@ -15,8 +16,22 @@ class spaceShip
     {
         console.log("Engine is off");
     }
+
+    ufo()
+    {
+        console.log("UFO in Space");
+    }
+
+    setName(name)
+    {
+        this.setName = name;
+    }
 }
 
 let rocket =  new spaceShip();
 rocket.start();
 rocket.stop();
+
+let UFO = new spaceShip();
+UFO.ufo();
+UFO.setName("skyNet");
