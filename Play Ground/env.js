@@ -1,37 +1,20 @@
 
 
-class spaceShip
+class Spaceship
 {
-    constructor()
-    {
-        console.log("spaceShip constructor");
-    }
-
     start()
     {
-        console.log("Engine is on");
-    }
-
-    stop()
-    {
-        console.log("Engine is off");
-    }
-
-    ufo()
-    {
-        console.log("UFO in Space");
-    }
-
-    setName(name)
-    {
-        this.setName = name;
+        console.log("Engine started");
     }
 }
 
-let rocket =  new spaceShip();
-rocket.start();
-rocket.stop();
+class Rocket extends Spaceship
+{
+    start()
+    {
+        console.log("Rocket started");
+    }
+}
 
-let UFO = new spaceShip();
-UFO.ufo();
-UFO.setName("skyNet");
+let objs = new Spaceship();
+let objr = new Rocket();
