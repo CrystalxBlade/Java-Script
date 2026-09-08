@@ -4,7 +4,7 @@ class Spaceship
 {
     start()
     {
-        console.log("Engine started");
+        console.log("Parent Method");
     }
 }
 
@@ -12,9 +12,10 @@ class Rocket extends Spaceship
 {
     start()
     {
-        console.log("Rocket started");
+        // super();
+        console.log("Child Method");
     }
 }
 
-let objs = new Spaceship();
-let objr = new Rocket();
+let par = new Spaceship();
+let child = new Rocket();
