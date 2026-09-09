@@ -2,6 +2,11 @@
 
 class Spaceship
 {
+    constructor()
+    {
+        this.species = "Aliens in UFO"
+    }
+
     start()
     {
         console.log("Parent Method");
@@ -10,12 +15,18 @@ class Spaceship
 
 class Rocket extends Spaceship
 {
+    constructor(name)
+    {
+        super();
+        this.name = name;
+    }
+
     start()
     {
-        // super();
         console.log("Child Method");
     }
 }
 
-let par = new Spaceship();
-let child = new Rocket();
+let child = new Rocket("Humans");
+ 
+
