@@ -1,32 +1,19 @@
 
+let DATA = "Secret data";
 
-class Spaceship
+class User
 {
-    constructor()
+    constructor(name, email)
     {
-        this.species = "Aliens in UFO"
-    }
-
-    start()
-    {
-        console.log("Parent Method");
-    }
-}
-
-class Rocket extends Spaceship
-{
-    constructor(name)
-    {
-        super();
         this.name = name;
+        this.email = email;
     }
 
-    start()
+    viewData()
     {
-        console.log("Child Method");
+        console.log("data = ", DATA);
     }
 }
 
-let child = new Rocket("Humans");
- 
-
+let student1 = new User("Blade", "Blade@gmail.com");
+let student2 = new User("Crystal", "Crystal@gmail.com");
