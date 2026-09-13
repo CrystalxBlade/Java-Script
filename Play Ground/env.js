@@ -1,19 +1,15 @@
 
-let DATA = "Secret data";
 
-class User
+setTimeout(() =>{
+
+    console.log("Hacking kamals Facebook......")
+}, 2000)
+
+try
 {
-    constructor(name, email)
-    {
-        this.name = name;
-        this.email = email;
-    }
-
-    viewData()
-    {
-        console.log("data = ", DATA);
-    }
+    console.log(kamal)
 }
-
-let student1 = new User("Blade", "Blade@gmail.com");
-let student2 = new User("Crystal", "Crystal@gmail.com");
+catch(error)
+{
+    console.log("Balle Balle")
+}
