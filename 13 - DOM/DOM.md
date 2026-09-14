@@ -23,15 +23,6 @@ With the DOM, JavaScript can:
 
 ---
 
-# 1. What is the DOM?
-
-Suppose we have:
-
-```html
-<h1>Hello</h1>
-<p>Welcome</p>
-
-
 
 ## Important DOM Manipulation Properties
 
