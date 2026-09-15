@@ -1,0 +1,17 @@
+body
+{
+    background-color: rgb(241, 236, 207);
+    font-family: sans-serif;
+}
+h1
+{
+    color:rgb(101, 103, 245);
+    background-color: rgb(240, 192, 228);
+}
+button
+{
+    background-color: rgb(241, 165, 165);
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+}
