@@ -1,26 +1,12 @@
 
 
-let cart  = document.querySelector("div");
-console.dir(cart);
+let error = document.createElement("button");
+error.innerHTML = "<i>Error 404<i>";
+error.style.color = "white";
+error.style.backgroundColor = "red";
+error.style.height = "8rem";
+error.style.width = "8rem";
+error.style.fontSize = "2rem";
 
-let h = document.querySelector("h1");
+let bod = document.querySelector("body").append(error);
 
-let at = h.getAttribute("id");
-console.dir(at);
-
-let crystal = document.querySelector("h2");
-
-let prop = document.querySelector("p")
-console.log(prop.getAttribute("class"));
-
-
-let box = document.querySelector(".box");
-console.dir(box);
-
-box.style.backgroundColor = "cyan";
-box.style.fontSize = "2.4em";
-box.innerText = "Cube";
-
-let newBtn = document.createElement("button");
-console.log(newBtn);
-newBtn.innerText = "Click Here";
