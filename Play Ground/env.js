@@ -10,3 +10,5 @@ error.style.fontSize = "2rem";
 
 let bod = document.querySelector("body").append(error);
 
+let para = document.querySelector("p");
+para.setAttribute("class", "newpick")
