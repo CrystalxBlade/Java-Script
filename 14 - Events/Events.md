@@ -24,7 +24,8 @@ An event is an action or occurrence detected by the browser.
 
 Examples:
 
-```text
+```
+text
 click
 dblclick
 mouseover
@@ -37,6 +38,8 @@ focus
 blur
 submit
 
+```
+## Common Events
 
 | Event        | Happens when               |
 | ------------ | -------------------------- |
@@ -56,3 +59,43 @@ submit
 | `focus`      | Element receives focus     |
 | `blur`       | Element loses focus        |
 | `submit`     | Form is submitted          |
+
+
+## Important Event Methods and Properties
+
+| Property / Method     | Purpose                        |
+| --------------------- | ------------------------------ |
+| `event.target`        | Original event target          |
+| `event.currentTarget` | Element handling the event     |
+| `event.type`          | Event type                     |
+| `event.key`           | Pressed keyboard key           |
+| `event.code`          | Physical keyboard key          |
+| `event.clientX`       | Mouse X coordinate             |
+| `event.clientY`       | Mouse Y coordinate             |
+| `event.shiftKey`      | Checks Shift                   |
+| `event.ctrlKey`       | Checks Ctrl                    |
+| `event.altKey`        | Checks Alt                     |
+| `preventDefault()`    | Stops default browser behavior |
+| `stopPropagation()`   | Stops event propagation        |
+
+
+## DOM Events in One Picture
+
+```
+             USER ACTION
+                  ↓
+        ┌──────────────────┐
+        │  Click / Type /  │
+        │  Key / Mouse     │
+        └────────┬─────────┘
+                 ↓
+              EVENT
+                 ↓
+       addEventListener()
+                 ↓
+          Event Handler
+                 ↓
+        JavaScript runs
+                 ↓
+            DOM changes
+```
