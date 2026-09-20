@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript DOM Events</title>
+</head>
+
+<body>
+
+    <h1 id="heading">DOM Events</h1>
+
+    <!-- Click Events -->
+
+    <button id="clickButton">
+        Click Me
+    </button>
+
+    <button id="doubleClickButton">
+        Double Click Me
+    </button>
+
+    <p id="clickMessage"></p>
+
+
+    <hr>
+
+
+    <!-- Mouse Events -->
+
+    <div id="mouseBox">
+        Move your mouse here
+    </div>
+
+    <p id="mouseMessage"></p>
+
+
+    <hr>
+
+
+    <!-- Keyboard Events -->
+
+    <input
+        id="keyboardInput"
+        type="text"
+        placeholder="Type something"
+    >
+
+    <p id="keyMessage"></p>
+
+
+    <hr>
+
+
+    <!-- Input Events -->
+
+    <input
+        id="nameInput"
+        type="text"
+        placeholder="Enter your name"
+    >
+
+    <p id="nameOutput"></p>
+
+
+    <hr>
+
+
+    <!-- Change Event -->
+
+    <select id="characterSelect">
+
+        <option value="">
+            Select a character
+        </option>
+
+        <option value="Blade">
+            Blade
+        </option>
+
+        <option value="Crystal">
+            Crystal
+        </option>
+
+        <option value="Ghost">
+            Ghost
+        </option>
+
+        <option value="Trevor">
+            Trevor
+        </option>
+
+    </select>
+
+    <p id="selectOutput"></p>
+
+
+    <hr>
+
+
+    <!-- Focus and Blur -->
+
+    <input
+        id="focusInput"
+        type="text"
+        placeholder="Click inside this input"
+    >
+
+    <p id="focusMessage"></p>
+
+
+    <hr>
+
+
+    <!-- Event Object -->
+
+    <button id="eventButton">
+        Inspect Event
+    </button>
+
+    <p id="eventOutput"></p>
+
+
+    <hr>
+
+
+    <!-- Prevent Default -->
+
+    <a
+        id="exampleLink"
+        href="https://example.com"
+    >
+        Example Link
+    </a>
+
+
+    <hr>
+
+
+    <!-- Form -->
+
+    <form id="playerForm">
+
+        <input
+            id="playerName"
+            type="text"
+            placeholder="Player name"
+        >
+
+        <button type="submit">
+            Start Game
+        </button>
+
+    </form>
+
+    <p id="formMessage"></p>
+
+
+    <hr>
+
+
+    <!-- Event Bubbling -->
+
+    <div id="outerBox">
+
+        Outer Box
+
+        <button id="innerButton">
+            Inner Button
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
