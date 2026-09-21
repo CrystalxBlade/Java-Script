@@ -18,7 +18,7 @@ Events are what make webpages interactive.
 
 ---
 
-# 1. What is an Event?
+# What is an Event?
 
 An event is an action or occurrence detected by the browser.
 
