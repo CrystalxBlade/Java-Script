@@ -30,3 +30,13 @@ div
     width: 8rem;
     background: lightcoral;
 }
+.dark
+{
+    background-color: rgb(61, 59, 59);
+    color: white;
+}
+.light
+{
+    background-color: white;
+    color: black;
+}

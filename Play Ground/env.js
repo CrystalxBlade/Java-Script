@@ -1,16 +1,22 @@
 let btn1 = document.querySelector("#first");
 
-btn1.onclick = (evt) =>
-{
-    console.log(evt);
-    console.log(evt.type)
-    console.log(evt.clientX, evt.clientY)
-    console.log(evt.target)
-}
+let currMode = "light";
+let body = document.querySelector("body");
 
-let box = document.querySelector("div");
+btn1.addEventListener("click", () => {
 
-box.onmouseover = () =>
-{
-    box.style.backgroundColor = "green";
-}
+    if(currMode === "light")
+    {
+        currMode = "dark";
+        body.classList.add("dark");
+        body.classList.remove("light")
+    }
+    else
+    {
+        currMode = "light";
+        body.classList.add("light");
+        body.classList.remove("dark");
+    }
+
+    console.log(currMode);
+});
