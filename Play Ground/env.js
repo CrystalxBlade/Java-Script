@@ -1,12 +1,9 @@
 
-function sum(a, b)
-{
-    console.log(a + b);
-}
 
-function calculator(a, b, sumCallback)
+function getData(dataID)
 {
-    sumCallback(a, b);
+    setTimeout(() =>
+    {
+        console.log("Data: ", dataID);
+    }, 2000)
 }
-
-calculator(4,2, sum);
