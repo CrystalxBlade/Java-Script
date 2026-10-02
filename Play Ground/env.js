@@ -1,23 +1,21 @@
 
-
-const testPromise = new Promise((resolve, reject) =>
+function asyncFunc()
 {
-    const result = 5 + 4;
-    if(result === 10)
+    return new Promise((resolve, reject) =>
     {
-        resolve('Fulfilled')
-    }
-    else
-    {
-        reject({message : 'something went wrong 404'})
-    }
-}); 
-
-testPromise.then(message =>
-{
-    console.log(message);
-}).catch(message =>
-{
-    console.log(message);
+        setTimeout(() =>
+        {
+            console.log('some data');
+            resolve('success');
+        },2000);
+    });
 }
-)
+
+let p1 = asyncFunc();
+p1.then(() =>
+{
+    console.log((res) =>
+    {
+        console.log(res);
+    })
+})
