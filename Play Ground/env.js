@@ -1,26 +1,39 @@
 
-let promiseOne = new Promise((resolve, reject) =>
+let promiseOne = new Promise((resolve,reject) =>
 {
     setTimeout(() =>
     {
-        console.log('Async task is complete');
+        console.log('Async task 1 completed');
         resolve();
-    }, 1000)
-})
+    }, 2000)
+});
 
 promiseOne.then(() =>
 {
-    console.log("Promise consumed");
-});
+    console.log('Promise consumed 1');
+})
 
 new Promise((resolve, reject) =>
 {
     setTimeout(() => 
         {
-            console.log('Async Task 2');
+            console.log('Async taske 2 completed');
             resolve();
-        },1000)
+        },4000)
 }).then(() =>
 {
-    console.log('Promise consumed 2');
+    console.log('Promisde consumed 2');
+})
+
+const promiseThree = new Promise((resolve, reject) =>
+{
+    setTimeout(() =>
+    {
+        resolve({username: "Blade", email: "crystal@Blade.com",})
+    })
+})
+
+promiseThree.then((user) => 
+{
+    console.log(user);
 })
