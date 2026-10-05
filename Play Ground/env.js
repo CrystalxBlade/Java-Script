@@ -22,7 +22,7 @@ new Promise((resolve, reject) =>
         },4000)
 }).then(() =>
 {
-    console.log('Promisde consumed 2');
+    console.log('Promise consumed 2');
 })
 
 const promiseThree = new Promise((resolve, reject) =>
@@ -37,3 +37,35 @@ promiseThree.then((user) =>
 {
     console.log(user);
 })
+
+const promiseFour = new Promise((resolve, reject) =>
+{
+    setTimeout(() =>
+    {
+        let error = true;
+        if(!error)
+        {
+            resolve({username: "Crystal", password: "1234"});
+        }
+        else
+        {
+            reject('ERROR: Something went wrong')
+        }
+    }, 6000)
+})
+
+promiseFour.then((user) =>
+{
+    console.log(user);
+    // return user.username
+    return user.password
+}).then((username) =>
+{
+    console.log(username);
+}).catch((error) =>
+{
+    console.log(error);
+}).finally(() => console.log('The promise is either resolved or rejected'));
+
+
+
