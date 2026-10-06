@@ -129,3 +129,35 @@ async function blunder()
 }
 
 blunder()
+
+let promiseSeven = new Promise((resolve, reject) =>
+{
+    setTimeout(() =>
+    {
+        val = true
+        if(val)
+        {
+            resolve({username: 'Skull', passKey: '1406'})
+        }
+        else
+        {
+            reject('failed to pass the key')
+        }
+    }, 12000)
+});
+
+
+async function seven()
+{
+    try
+    {
+        const response = await promiseSeven
+        console.log(response);
+    }
+    catch(error)
+    {
+        console.log(error);
+    }
+}
+
+seven()
