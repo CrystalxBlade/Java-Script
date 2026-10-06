@@ -99,65 +99,19 @@ async function consumePromiseFive()
 
 consumePromiseFive()
 
-const promiseSix = new Promise((resolve, reject) =>
+async function getAllUsers()
 {
-    setTimeout(() =>
+    try 
     {
-        let mistake = true;
-        if(!mistake)
-        {
-            resolve({user: 'CrystalxBlade', password: 4567})
-        }
-        else
-        {
-            reject('It was a mistake')
-        }
-    }, 10000)
-})
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+        const data = await response.json()
 
-async function blunder()
-{
-    try
+        console.log(data);
+    } 
+    catch (error) 
     {
-        const fault = await promiseSix
-        console.log(fault);
-    }
-    catch(mistake)
-    {
-        console.log(mistake);
+        console.log('Error 404', error);
     }
 }
 
-blunder()
-
-let promiseSeven = new Promise((resolve, reject) =>
-{
-    setTimeout(() =>
-    {
-        val = true
-        if(val)
-        {
-            resolve({username: 'Skull', passKey: '1406'})
-        }
-        else
-        {
-            reject('failed to pass the key')
-        }
-    }, 12000)
-});
-
-
-async function seven()
-{
-    try
-    {
-        const response = await promiseSeven
-        console.log(response);
-    }
-    catch(error)
-    {
-        console.log(error);
-    }
-}
-
-seven()
+getAllUsers()
