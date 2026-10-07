@@ -99,19 +99,33 @@ async function consumePromiseFive()
 
 consumePromiseFive()
 
-async function getAllUsers()
+// async function getAllUsers()
+// {
+//     try 
+//     {
+//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+//         const data = await response.json()
+
+//         console.log(data);
+//     } 
+//     catch (error) 
+//     {
+//         console.log('Error 404', error);
+//     }
+// }
+
+// getAllUsers()
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((res) => 
+    {
+        return res.json()
+    })
+.then((data) =>
 {
-    try 
-    {
-        const response = await fetch('https://jsonplaceholder.typicode.com/users')
-        const data = await response.json()
-
-        console.log(data);
-    } 
-    catch (error) 
-    {
-        console.log('Error 404', error);
-    }
-}
-
-getAllUsers()
+    console.log(data);
+})
+.catch((error) =>
+{
+    console.log(error)
+})
