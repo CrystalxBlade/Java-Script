@@ -1,7 +1,7 @@
 
- const Knight = function() 
-        {
-            console.log("Hornet x Knight");
-        }
+ 
+ setInterval(() =>
+{
+    
+}, 1000)
 
-        setTimeout(Knight, 2000);
