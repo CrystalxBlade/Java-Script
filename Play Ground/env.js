@@ -1,7 +1,10 @@
 
  
- setInterval(() =>
+const sayDate = (str) =>
 {
-    
-}, 1000)
+    console.log(str, "Blade", Date.now())
+}
+
+
+//  setInterval(sayDate, 2000, 'hi');
 
