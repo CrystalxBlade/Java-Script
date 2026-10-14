@@ -1,10 +1,43 @@
 
- 
-const sayDate = (str) =>
+
+const randomColor = () =>
 {
-    console.log(str, "Blade", Date.now())
+    const hex = '0123456789ABCDEF'
+    let color = '#'
+
+    for(let i = 0; i < 6; i++)
+    {
+        color += hex[(Math.floor(Math.random() * 16))];
+    }
+
+    return color;
 }
 
+let intervalId;
 
-//  setInterval(sayDate, 2000, 'hi');
+const startChangingColor = () => 
+    {
+        if(!intervalId)
+        {
+            intervalId = setInterval(changBgColor, 1000);
+        }
 
+        function changBgColor ()
+        {
+            document.body.style.backgroundColor = randomColor();
+        }
+    }
+
+const stopChangingColor = () => 
+    {
+        clearInterval(intervalId);
+        intervalId = null
+    }
+
+console.log(randomColor());
+
+document.querySelector("#start").addEventListener
+('click', startChangingColor)
+
+document.querySelector("#stop").addEventListener
+('click', stopChangingColor)
